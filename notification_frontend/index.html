@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html><head>
+  <title>Ankit Bansal Wingify Notification Task</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="./stylesheets/main.css">
+
+  <!-- Javascripts -->
+  <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+  <script src="https://js.pusher.com/3.0/pusher.min.js"></script>
+  <script src="./javascripts/notification.js"></script>
+  <script src="./javascripts/main.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="navigation">
+      <div class="searchbar">
+        <input type="text" name="name"/>
+        <span class="fa fa-search"></span>
+      </div>
+      <div id="notification">
+        <div data-behaviour="bell-button">
+          <span class="fa fa-bell-o"></span>
+          <span class="count" data-container="count"></span>
+        </div>
+        <div class="notification-pannel" data-container="notification-box">
+          <div class="title">
+            Notifications <span class="count" data-container="count"></span>
+          </div>
+          <div class="notification-content-holder" data-container="notification-content">
+          </div>
+        </div>
+      </div>
+      <span id="message" class="fa fa-envelope-o"></span>
+      <span id="profile">
+        <span class="fa user-icon">
+          <img src="images/user-icon.jpg">
+        </span>
+        <span class="fa fa-chevron-down"></span>
+      </span>
+    </div>
+  </div>
+  <div class="hide">
+    <div class='notification-content' data-element="notification-content">
+      <div class="notification-picture">
+        <span class="fa notifier-icon">
+          <img src="images/notifier-icon.jpg">
+        </span>
+      </div>
+      <div class="notification-text">
+        <span class="notifier" data-container='notification-user'></span>
+        <span class='notification-description' data-container='notification-description'></span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

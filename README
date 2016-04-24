@@ -1,0 +1,23 @@
+The Following application consists of two small apps:
+
+  1) Backend Application: It is a grape application, that exposes an api for notifications which create notifications at random time intervals
+  2) Frontend Application: It mainly consists of html, css and jquery.
+
+Backend Setup Procedure (System should have ruby installed).
+
+  Starting Backend Application:
+    1) In a terminal go to `notification_backend` folder and run the following commands.
+      a) `bundle install`
+        It will install all the gems required by the system.
+      b) `bundle exec rake db:setup`
+        It will create the database schema and seed 2 notifications in the system
+      c) `bundle exec rackup`
+        It will start the server (rack application) on port 9292
+
+  To randomly generate notification:
+    1) Open another terminal and go to `notification_backend` folder and run following commands.
+      a) `bundle exec rake random_notification:generate`
+        It will create a notification at random interval (5 to 10 seconds). It will stop after 10 notifications are created. To generate more notifications, repeat this step.
+
+Frontend Setup Procedure.
+  1) Go to `notification_frontend` folder and open `index.html` in browser.

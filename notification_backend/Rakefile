@@ -1,0 +1,2 @@
+require "grape/activerecord/rake"
+require "./config/environment"

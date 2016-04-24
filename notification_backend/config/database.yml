@@ -1,0 +1,5 @@
+development:
+  adapter: sqlite3
+  database: notification_app
+  pool: 5
+  timeout: 5000

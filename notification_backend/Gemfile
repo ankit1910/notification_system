@@ -1,0 +1,10 @@
+source 'https://rubygems.org'
+
+gem 'grape'
+gem 'grape-activerecord'
+gem 'sqlite3'
+gem 'rack-cors'
+gem 'rake'
+gem 'pusher'
+gem 'tux'
+gem 'byebug'
